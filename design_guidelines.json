@@ -1,0 +1,130 @@
+{
+  "theme": "LIGHT",
+  "archetype": "Indian Vibrant Earth (Hybrid of Organic & Vibrant Play)",
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["700", "900"],
+      "classes": "font-bold tracking-tight text-[#0F3818]"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "classes": "font-normal leading-relaxed text-[#1C1C1C]"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl+ leading-none tracking-tighter",
+      "h2": "text-3xl sm:text-4xl leading-tight tracking-tight",
+      "h3": "text-xl sm:text-2xl leading-snug",
+      "p": "text-base sm:text-lg",
+      "small": "text-sm tracking-wide uppercase"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FBF9F6", 
+      "secondary": "#F3EFE9", 
+      "dark_section": "#0F3818"
+    },
+    "text": {
+      "primary": "#0F3818",
+      "secondary": "#4A5D4E",
+      "inverse": "#FBF9F6"
+    },
+    "brand": {
+      "saffron": "#FF7235",
+      "saffron_hover": "#FF8A55",
+      "deep_green": "#0F3818",
+      "whatsapp": "#25D366",
+      "whatsapp_hover": "#21B858"
+    },
+    "utility": {
+      "border": "rgba(15, 56, 24, 0.15)",
+      "success": "#25D366",
+      "error": "#FF3B30"
+    }
+  },
+  "layout_and_spacing": {
+    "container_padding": "px-6 md:px-12",
+    "section_spacing": "py-20 md:py-32",
+    "border_radius": {
+      "cards": "rounded-3xl",
+      "buttons": "rounded-full"
+    },
+    "grids": {
+      "bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8",
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-4"
+    }
+  },
+  "components_strategy": {
+    "buttons": {
+      "primary_whatsapp": "bg-[#25D366] text-white font-bold rounded-full hover:bg-[#21B858] transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl shadow-[#25D366]/30 flex items-center justify-center gap-2 px-8 py-4 text-lg",
+      "secondary_saffron": "bg-[#FF7235] text-white font-bold rounded-full hover:bg-[#FF8A55] transition-all duration-300 shadow-lg shadow-[#FF7235]/30 px-8 py-4",
+      "outline": "border-2 border-[#0F3818] text-[#0F3818] rounded-full hover:bg-[#0F3818] hover:text-[#FBF9F6] transition-colors px-6 py-3"
+    },
+    "cards": {
+      "testimonial": "bg-white p-8 rounded-3xl shadow-sm border border-[#0F3818]/5 relative overflow-hidden",
+      "benefit": "bg-[#F3EFE9] p-8 rounded-3xl border border-[#0F3818]/10 flex flex-col items-start gap-4",
+      "pricing": "bg-white p-8 rounded-3xl border-2 border-[#0F3818]/10 relative",
+      "pricing_highlighted": "bg-[#0F3818] text-white p-8 rounded-3xl shadow-2xl relative border-2 border-[#FF7235]"
+    },
+    "inputs": {
+      "style": "bg-white border-2 border-[#0F3818]/10 rounded-xl px-4 py-3 text-lg focus:border-[#FF7235] focus:ring-2 focus:ring-[#FF7235]/20 transition-all outline-none"
+    }
+  },
+  "motion_and_interactions": {
+    "scroll_animations": "Use framer-motion. Staggered fade-up (`y: 20`, `opacity: 0`) for lists and bento grid items. Duration 0.5s, ease 'easeOut'.",
+    "hover_states": "All buttons must scale up 1.02x. Cards should have a subtle Y-translate (`-translate-y-1`) and increased shadow on hover.",
+    "page_transitions": "Minimal opacity fade in."
+  },
+  "media": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-[2px] text-[#FF7235]"
+    },
+    "textures": {
+      "noise": "Apply a subtle CSS grain overlay (e.g., `bg-[url('data:image/svg+xml,...')]`) on the #FBF9F6 background to prevent digital flatness."
+    },
+    "image_urls": {
+      "hero_fitness": {
+        "url": "https://images.pexels.com/photos/5221029/pexels-photo-5221029.jpeg",
+        "description": "Muscular man working out. Use in the hero section, potentially with a strong #0F3818 gradient overlay to ensure text contrast.",
+        "category": "hero"
+      },
+      "solution_food": {
+        "url": "https://images.pexels.com/photos/29148133/pexels-photo-29148133.jpeg",
+        "description": "Indian thali. Use for the 'Customized Indian Diet' solution bento box. Object-fit cover with slight zoom on hover.",
+        "category": "feature"
+      },
+      "workout_feature": {
+        "url": "https://images.pexels.com/photos/11800270/pexels-photo-11800270.jpeg",
+        "description": "Strong man chest workout. Use for 'Simple Workouts' bento box.",
+        "category": "feature"
+      },
+      "testimonial_1": {
+        "url": "https://images.pexels.com/photos/30076938/pexels-photo-30076938.jpeg",
+        "description": "Joyful Indian woman portrait. Use as avatar for female testimonial.",
+        "category": "testimonial"
+      },
+      "testimonial_2": {
+        "url": "https://images.pexels.com/photos/28945957/pexels-photo-28945957.jpeg",
+        "description": "Smiling Indian man portrait. Use as avatar for male testimonial.",
+        "category": "testimonial"
+      }
+    }
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure white text over #0F3818 meets APCA standards. Provide high contrast focus rings.",
+    "testing_attributes": "All interactive elements must use data-testid (e.g., data-testid='whatsapp-cta', data-testid='lead-form-submit')."
+  },
+  "instructions_to_main_agent": [
+    "This is a hybrid app (Marketing Funnel + Admin Dashboard). Ensure the marketing pages do not look like a SaaS dashboard.",
+    "For the marketing pages (Landing, Pricing, Thank You), DO NOT use standard Shadcn Cards or generic layouts. Use custom pure HTML/Tailwind to build the bento grids and asymmetric layouts.",
+    "For the Admin Dashboard (/admin), DO use Shadcn components (Table, Input, Button) in a strict, dense layout.",
+    "The /funnel page should visually map the 6-message sequence. Use a timeline or connecting lines (SVG or border-l) to connect message cards.",
+    "Always wrap interactive elements in 'framer-motion' for fluid entry.",
+    "Hero CTA MUST be the WhatsApp Green button. Use the #FF7235 Saffron for secondary actions or highlighting important checkmarks.",
+    "Do NOT use placeholder text for images. Use the exact URLs provided in this file.",
+    "Implement the sticky header correctly with z-50 and a backdrop-blur."
+  ]
+}
